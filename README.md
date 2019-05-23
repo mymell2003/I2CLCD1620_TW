@@ -1,21 +1,18 @@
 # I2C液晶1602
 
-makecode I2C 液晶 1602 扩展  
-
-作者: shaoziyang  
-日期: 2018.Mar  
+makecode I2C 液晶 1602 擴展  
 
   
 ![](lcd.jpg)
 
 
-## 添加扩展
+## 添加擴展
 
-打开 makecode 编辑器，在项目中选择扩展，然后在地址栏输入下面网址  
+打開 makecode 編輯器，在項目中選擇擴展，然後在位址欄輸入下面網址  
 
-https://github.com/makecode-packages/I2CLCD1620_cn  
+https://github.com/makecode-packages/I2CLCD1620_TW  
 
-搜索后就可以添加并使用扩展了。
+搜索後就可以添加並使用擴展了。
 
 ## 基本用法
 ```
@@ -30,68 +27,64 @@ basic.forever(() => {
 ```
 
 ## I2C 地址
-有两种I2C液晶模块，它们的地址不相同：    
+有兩種I2C液晶模組，它們的位址不相同：    
 - 39: PCF8574  
 - 63: PCF8574A  
 
-如果将地址设置为0，扩展会自动搜索并识别正确的地址
-- 0：自动地址模式
+如果將位址設置為0，擴展會自動搜索並識別正確的位址
+- 0：自動位址模式
 
 ## API
 
 - **LcdInit**(address: number)  
 初始化 LCD  
 address: I2C 地址  
- 0: 自动识别地址  
+ 0: 自動識別位址  
  39: PCF8574  
  63: PCF8574A
 
 - **ShowNumber**(n: number, x: number, y: number)  
-在液晶的指定位置显示数字。  
-n: 数字  
-x: 液晶X轴坐标, [0 - 15]  
-y: 液晶Y轴坐标, [0 - 1]  
+在液晶的指定位置顯示數位。  
+n: 數字  
+x: 液晶X軸座標, [0 - 15]  
+y: 液晶Y軸座標, [0 - 1]  
 
 - **ShowString**(s: string, x: number, y: number)  
-在液晶指定位置显示字符串show a string in LCD at given position.  
-s: 将要显示的英文字符串  
-x: 液晶X轴坐标, [0 - 15]  
-y: 液晶Y轴坐标, [0 - 1]  
+在液晶指定位置顯示字串show a string in LCD at given position.  
+s: 將要顯示的英文字串  
+x: 液晶X軸座標, [0 - 15]  
+y: 液晶Y軸座標, [0 - 1]  
 
 - **on**()  
-打开液晶的显示功能
+打開液晶的顯示功能
 
 - **off**()  
-关闭液晶  
+關閉液晶  
 
 - **clear**()  
-清除液晶显示的内容  
+清除液晶顯示的內容  
 
 - **BacklightOn**()  
-打开液晶的背光灯  
+打開液晶的背光燈  
 
 - **BacklightOff**()  
-关闭液晶的背光灯  
+關閉液晶的背光燈  
 
 - shl()
-屏幕向左移动
+螢幕向左移動
 
 - shr()
-屏幕向右移动 
+螢幕向右移動 
 
-## 演示
 
-![](demo.jpg)
-
-## 授权方式
+## 授權方式
 
 MIT
 
-microbit/micropython 中文社区版权所有 (c) 2018  
+microbit/micropython 中文社區版權所有 (c) 2018  
 
-## 支持硬件
+## 支援硬體
 
 * for PXT/microbit
 
 
-[来自 microbit/micropython 中文社区](http://www.micropython.org.cn)
