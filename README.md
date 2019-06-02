@@ -10,7 +10,7 @@ makecode I2C 液晶 1602 擴展
 
 打開 makecode 編輯器，在項目中選擇擴展，然後在位址欄輸入下面網址  
 
-https://github.com/makecode-packages/I2CLCD1620_TW  
+https://github.com/mymell2003/I2CLCD1620_TW  
 
 搜索後就可以添加並使用擴展了。
 
