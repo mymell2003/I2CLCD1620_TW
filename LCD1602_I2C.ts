@@ -96,12 +96,12 @@ namespace I2C_LCD1602 {
     }
 
     /**
-     * 在液晶的指定位置顯示數位
+     * 在液晶的指定位置顯示數字
      * @param n is number will be show, eg: 10, 100, 200
      * @param x is LCD column position, eg: 0
      * @param y is LCD row position, eg: 0
      */
-    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="顯示數位 %n|位置 x %x|y %y"
+    //% blockId="I2C_LCD1620_SHOW_NUMBER" block="顯示數字 %n|位置 x %x|y %y"
     //% weight=90 blockGap=8
     //% x.min=0 x.max=15
     //% y.min=0 y.max=1
